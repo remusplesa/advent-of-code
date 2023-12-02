@@ -1,10 +1,11 @@
 import chalk from 'chalk';
 import inquirer from 'inquirer';
 import { day1 } from './day_1/index.js';
-
+import { day2 } from './day_2/index.js';
 
 const puzzleOptions = {
   'Day 1': day1,
+  'Day 2': day2,
 }
 
 const log = console.log;
@@ -29,4 +30,4 @@ inquirer
       console.error(error)
       // Prompt couldn't be rendered in the current environment
  
-  });
+  });``
