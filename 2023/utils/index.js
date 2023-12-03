@@ -8,3 +8,13 @@ export function readTxt(path) {
     console.error('Error:', e.stack);
   }
 }
+
+export function matrixPrettyPrint(matrix){ 
+  for (let i = 0; i < matrix.length; i++){
+    const row = matrix[i].reduce((acc, item) => {
+      return acc + " " + item
+    }, "")
+
+    console.log(`${row}\n`)
+  }
+}

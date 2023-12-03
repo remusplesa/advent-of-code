@@ -1,7 +1,7 @@
 import { readTxt } from "../utils/index.js";
 
-export const day2 = () => {
-  const input = readTxt("day_2/input.txt");
+export const day2 = (inputPath = "day_2/input.txt") => {
+  const input = readTxt(inputPath);
   const lines = input.split("\n");
 
   function getId(line) {

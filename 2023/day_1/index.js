@@ -63,8 +63,8 @@ const extractDigits_v2 = (someString) => {
   return digits.map((d) => mapValues[d.value] ?? d.value);
 };
 
-export const day1 = () => {
-  const input = readTxt("day_1/input.txt");
+export const day1 = (inputPath = "day_1/input.txt") => {
+  const input = readTxt(inputPath);
   const lines = input.split("\n");
 
   const sum_pt1 = lines.reduce((total, line) => {

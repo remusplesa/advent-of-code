@@ -2,10 +2,12 @@ import chalk from 'chalk';
 import inquirer from 'inquirer';
 import { day1 } from './day_1/index.js';
 import { day2 } from './day_2/index.js';
+import { day3 } from './day_3/index.js';
 
 const puzzleOptions = {
   'Day 1': day1,
   'Day 2': day2,
+  'Day 3': day3
 }
 
 const log = console.log;
@@ -17,7 +19,7 @@ inquirer
       type: 'list',
       name: 'dayPuzzle',
       message: 'Choose an option:',
-      choices: ['Day 1', 'Day 2'],
+      choices: ['Day 1', 'Day 2', 'Day 3'],
     },
   ])
   .then((answers) => {
