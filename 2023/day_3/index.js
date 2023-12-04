@@ -53,7 +53,7 @@ export const day3 = (inputPath = "day_3/input.txt") => {
     return acc + item;
   }, 0);
 
-  
+
   let gearId = 0;
   const regex = /\[\*\d+\]/g;
   const gears = {};

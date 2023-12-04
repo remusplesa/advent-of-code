@@ -3,11 +3,13 @@ import inquirer from 'inquirer';
 import { day1 } from './day_1/index.js';
 import { day2 } from './day_2/index.js';
 import { day3 } from './day_3/index.js';
+import { day4 } from './day_4/index.js';
 
 const puzzleOptions = {
   'Day 1': day1,
   'Day 2': day2,
-  'Day 3': day3
+  'Day 3': day3,
+  'Day 4': day4,
 }
 
 const log = console.log;
@@ -19,7 +21,7 @@ inquirer
       type: 'list',
       name: 'dayPuzzle',
       message: 'Choose an option:',
-      choices: ['Day 1', 'Day 2', 'Day 3'],
+      choices: ['Day 1', 'Day 2', 'Day 3', 'Day 4'],
     },
   ])
   .then((answers) => {
@@ -29,7 +31,7 @@ inquirer
     part2 && log(chalk.yellow(` Part 2 result: ${part2}`));
   })
   .catch((error) => {
-      console.error(error)
-      // Prompt couldn't be rendered in the current environment
- 
-  });``
+    console.error(error)
+    // Prompt couldn't be rendered in the current environment
+
+  }); ``
