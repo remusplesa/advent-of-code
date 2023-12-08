@@ -7,6 +7,7 @@ import { day4 } from './day_4/index.js';
 import { day5 } from './day_5/index.js';
 import { day6 } from './day_6/index.js';
 import { day7 } from './day_7/index.js';
+import { day8 } from './day_8/index.js';
 
 const puzzleOptions = {
   'Day 1': day1,
@@ -16,6 +17,7 @@ const puzzleOptions = {
   'Day 5': day5,
   'Day 6': day6,
   'Day 7': day7,
+  'Day 8': day8,
 }
 
 const log = console.log;
@@ -27,7 +29,7 @@ inquirer
       type: 'list',
       name: 'dayPuzzle',
       message: 'Choose an option:',
-      choices: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7'],
+      choices: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7', 'Day 8'],
     },
   ])
   .then((answers) => {

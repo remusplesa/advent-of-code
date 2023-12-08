@@ -141,7 +141,6 @@ export const day7 = (inputPath = "day_7/input.txt") => {
     }
   });
   const result2 = filtered2.reverse().reduce((acc, item, index) => {
-    console.log({c: item.cards, a: item.amount})
     const s = acc + item.amount * (index + 1);
     return s;
   }, 0);
