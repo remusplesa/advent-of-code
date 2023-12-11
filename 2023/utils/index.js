@@ -18,3 +18,9 @@ export function matrixPrettyPrint(matrix){
     console.log(`${row}\n`)
   }
 }
+
+export function readMatrix(path){
+  const input = readTxt(path);
+  const lines = input.split("\n").map((l) => l.trim());
+  return lines.map((line) => line.split(""))
+}
